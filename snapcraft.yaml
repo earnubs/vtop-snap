@@ -1,0 +1,13 @@
+name: vtop
+version: 1.0.1
+summary: A graphical activity monitor for the command line. Written in node.js.
+description: "Wow such top. So stats. More better than regular top. Written in node.js http://parall.ax/vtop"
+apps:
+  vtop:
+    command: vtop
+    plugs: [system-observe]
+parts:
+  vtop:
+    plugin: nodejs
+    node-packages:
+      - vtop
