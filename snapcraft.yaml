@@ -6,7 +6,7 @@ confinement: strict
 apps:
   vtop:
     command: vtop
-    plugs: [system-observe, process-control]
+    plugs: [network, system-observe, process-control]
 parts:
   vtop:
     plugin: nodejs
